@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>My Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#multimedia">Multimedia</a></li>
+          <li><a href="#timetable">Timetable</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Home -->
+    <section id="home">
+      <div class="container">
+        <h2>Home</h2>
+        <h3>Hi, I’m Divyansh Bhardwaj</h3>
+        <h4>Full Stack Web Developer</h4>
+        <p>
+          I love building simple and useful web applications using HTML,<br>
+          CSS, JavaScript, React and Node.js. This is a small portfolio website<br>
+          to show my work and how to contact me.
+        </p>
+
+        <figure>
+          <img src="nature image.jpg" alt="Mountains and a lake surrounded by pine trees">
+          <figcaption>Beautiful Nature View</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <p>Here are some of my sample projects.</p>
+        <ol>
+          <li><strong>E-commerce Website</strong> – A simple e-commerce website to buy products.</li>
+          <li><strong>Weather App</strong> – A weather application using a public API to get real-time weather data.</li>
+          <li><strong>Task Manager</strong> – A simple task manager to add, delete and mark tasks as complete.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <div class="container">
+        <h2>My Skills</h2>
+        <p>Here are the technologies I work with:</p>
+        <ul class="skills-list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>MongoDB</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>I am a passionate developer who enjoys learning new technologies and solving real world problems.</p>
+        <p>Following are some key details about me:</p>
+
+        <table class="about-table">
+          <tr>
+            <th>Name</th>
+            <td>:</td>
+            <td>Divyansh Bhardwaj</td>
+          </tr>
+          <tr>
+            <th>Role</th>
+            <td>:</td>
+            <td>Full Stack Web Developer</td>
+          </tr>
+          <tr>
+            <th>Education</th>
+            <td>:</td>
+            <td>B.Tech in Computer Science</td>
+          </tr>
+          <tr>
+            <th>Interests</th>
+            <td>:</td>
+            <td>Web Development, Reading, Travelling</td>
+          </tr>
+          <tr>
+            <th>Goal</th>
+            <td>:</td>
+            <td>To build useful and user friendly web applications</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p>Fill out the form below to get in touch.</p>
+
+        <form action="#" method="post">
+
+          <div class="form-row">
+            <label class="form-label" for="fullname">Full Name <span class="required">*</span></label>
+            <input class="form-control" type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+          </div>
+
+          <div class="form-row">
+            <label class="form-label" for="email">Email Address <span class="required">*</span></label>
+            <input class="form-control" type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+
+          <div class="form-row">
+            <label class="form-label" for="phone">Phone Number</label>
+            <input class="form-control" type="tel" id="phone" name="phone" placeholder="1234567890">
+          </div>
+
+          <div class="form-row">
+            <label class="form-label" for="dob">Date of Birth</label>
+            <input class="form-control" type="date" id="dob" name="dob">
+          </div>
+
+          <div class="form-row">
+            <span class="form-label">Gender</span>
+            <div class="options">
+              <label><input type="radio" name="gender" value="male"> Male</label>
+              <label><input type="radio" name="gender" value="female"> Female</label>
+              <label><input type="radio" name="gender" value="other"> Other</label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <span class="form-label">Preferred Contact</span>
+            <div class="options">
+              <label><input type="checkbox" name="contact" value="email"> Email</label>
+              <label><input type="checkbox" name="contact" value="phone"> Phone</label>
+              <label><input type="checkbox" name="contact" value="both"> Both</label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label class="form-label" for="subject">Subject <span class="required">*</span></label>
+            <select class="form-control" id="subject" name="subject" required>
+              <option value="">-- Select Subject --</option>
+              <option value="general">General Enquiry</option>
+              <option value="project">Project Work</option>
+              <option value="feedback">Feedback</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label class="form-label" for="message">Your Message <span class="required">*</span></label>
+            <textarea class="form-control" id="message" name="message" placeholder="Write your message..." required></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit">Send Message</button>
+          </div>
+
+        </form>
+      </div>
+    </section>
+
+    <!-- Multimedia -->
+    <section id="multimedia">
+      <div class="container">
+        <h2>Multimedia Web Page</h2>
+        <p>This section shows the use of video, audio and iframe in HTML using semantic elements.</p>
+
+        <h3>Video Example</h3>
+        <video controls poster="images/nature.jpg">
+          <source src="mov_bbb.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <h3>Audio Example</h3>
+        <audio controls>
+          <source src="horse_sound.mp3" type="audio/mpeg">
+          Your browser does not support the audio tag.
+        </audio>
+
+        <h3>Location (Google Maps)</h3>
+        <iframe
+          src="https://www.google.com/maps?q=New+Delhi&output=embed"
+          title="Map showing New Delhi"
+          loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <!-- Timetable -->
+    <section id="timetable">
+      <div class="container">
+        <h2>Class Timetable</h2>
+        <p>Department of Computer Science (Semester 1)</p>
+
+        <table class="timetable">
+          <tr>
+            <th>Day / Time</th>
+            <th>9:00 - 10:00</th>
+            <th>10:00 - 11:00</th>
+            <th>11:00 - 12:00</th>
+            <th>12:00 - 1:00</th>
+            <th>2:00 - 3:00</th>
+            <th>3:00 - 4:00</th>
+          </tr>
+          <tr>
+            <th>Monday</th>
+            <td>HTML</td>
+            <td>CSS</td>
+            <td>JavaScript</td>
+            <td class="lunch" rowspan="5">Lunch<br>Break</td>
+            <td>Python</td>
+            <td>DBMS</td>
+          </tr>
+          <tr>
+            <th>Tuesday</th>
+            <td>React</td>
+            <td>Node.js</td>
+            <td>Express.js</td>
+            <td>SQL</td>
+            <td>Project</td>
+          </tr>
+          <tr>
+            <th>Wednesday</th>
+            <td>DSA</td>
+            <td>OOPs</td>
+            <td>Web Design</td>
+            <td>Cloud Computing</td>
+            <td>Lab</td>
+          </tr>
+          <tr>
+            <th>Thursday</th>
+            <td>Computer Networks</td>
+            <td>Operating System</td>
+            <td>Database</td>
+            <td>HTML Lab</td>
+            <td>CSS Lab</td>
+          </tr>
+          <tr>
+            <th>Friday</th>
+            <td colspan="3">Project Work</td>
+            <td>Seminar</td>
+            <td>Review</td>
+          </tr>
+          <tr>
+            <th class="holiday">Saturday</th>
+            <td class="holiday" colspan="6">No Classes (Self Study)</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Divyansh Bhardwaj. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
